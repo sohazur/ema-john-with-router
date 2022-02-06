@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Inventory from "./components/Inventory/Inventory";
 import NotFound from "./components/NotFound/NotFound";
 import OrderReview from "./components/OrderReview/OrderReview";
+import PlaceOrder from "./components/PlaceOrder/PlaceOrder";
 import Shop from "./components/Shop/Shop";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/shop" element={<Shop></Shop>} />
         <Route exact path="/review" element={<OrderReview></OrderReview>} />
         <Route exact path="/inventory" element={<Inventory></Inventory>} />
+        <Route exact path="/placeorder" element={<PlaceOrder></PlaceOrder>} />
         <Route exact path="*" element={<NotFound></NotFound>} />
       </Routes>
     </div>
